@@ -12,7 +12,7 @@
     return this.each(function() {
       var $this   = $(this),
         data      = $this.data('headroom'),
-        options   = typeof option === 'object' && option;
+        options   = (typeof option === 'object') ? option : { };
 
       options = $.extend(true, {}, Headroom.options, options);
 
